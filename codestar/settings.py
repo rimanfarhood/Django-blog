@@ -28,10 +28,12 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-development = os.environ.get("DEVELOPMENT")
-DEBUG = development
+#development = os.environ.get("DEVELOPMENT")
 
-ALLOWED_HOSTS = ['django-blog-lession-8e9af6604610.herokuapp.com']
+DEBUG = True
+#os.environ.get("DEVELOPMENT")
+
+ALLOWED_HOSTS = ['django-blog-lession-8e9af6604610.herokuapp.com', '8000-rimanfarhood-djangoblog-hcutu4s916r.ws-eu107.gitpod.io']
 
 
 # Application definition
@@ -90,6 +92,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 #         }
 #     }
 # else:
+
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
