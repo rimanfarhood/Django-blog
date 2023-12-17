@@ -28,6 +28,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
+PORT = os.environ.get("PORT")
+
 # SECURITY WARNING: don't run with debug turned on in production!
 # development = os.environ.get("DEVELOPMENT")
 DEBUG = True
