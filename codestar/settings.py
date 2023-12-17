@@ -33,7 +33,6 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 # False
 
-
 ALLOWED_HOSTS = ['django-blog-lession-8e9af6604610.herokuapp.com', '8000-rimanfarhood-djangoblog-hcutu4s916r.ws-eu107.gitpod.io']
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
