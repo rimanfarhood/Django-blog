@@ -26,14 +26,14 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = False
-#os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 PORT = os.environ.get("PORT")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # development = os.environ.get("DEVELOPMENT")
-DEBUG = "DEPLOYMENT" in os.environ
+DEBUG = False
+#"DEPLOYMENT" in os.environ
 
 ALLOWED_HOSTS = ['django-blog-lession-8e9af6604610.herokuapp.com', '8000-rimanfarhood-djangoblog-hcutu4s916r.ws-eu107.gitpod.io']
 
